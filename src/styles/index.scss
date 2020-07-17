@@ -1,0 +1,63 @@
+@import "./utils/vars";
+@import "./sharedFonts/fonts.scss";
+@import "./vars";
+
+@font-face {
+  font-family: "Rock";
+  src: url("./sharedFonts/RockSalt-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Chelsea";
+  src: url("./sharedFonts/ChelseaMarket-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+
+}
+
+.p_blog {
+  margin-top: 70px;
+  margin-left: 30px;
+  width: 100px;
+  height: 100px;
+}
+
+.p_blog:hover {
+  transition: all .4s linear;
+  color: orange;
+}
+
+@media(max-width:180px) {
+  .layout {
+    display: none;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    transform: translateX(-100vw) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translateX(0) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    transform: translateX(0) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translateX(-100vw) translate3d(0, 0, 0);
+  }
+}
